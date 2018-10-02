@@ -1,0 +1,31 @@
+<button class="btn btn-primary btn-raised" (click)="toNext()">Create Godown</button>
+
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-12">
+            <table class="table">
+              <thead>
+                <th>Godown Name</th>
+                <th>Godown Code</th>
+                <th>Landmark</th>
+                <th>City</th>
+              </thead>
+              <tbody>
+                <tr *ngFor="let godown of rows">
+                  <td>{{godown.name}}</td>
+                  <td>{{godown.code}}</td>
+                  <td>{{godown.landmark}}</td>
+                  <td>{{godown.city}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
