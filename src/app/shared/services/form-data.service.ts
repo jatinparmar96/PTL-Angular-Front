@@ -38,15 +38,20 @@ export class FormDataService {
 
   getData()
   {
-    let data:any=[this.currentStep,this.stepCounter,this.formData];
+    let data:any=this.formData;
     return data;
   }
+  getMaxSteps()
+  {
+    return this.stepCounter;
+  }
+  
   storeData(url,data)
   {
+  
     return new Promise((resolve,reject)=>{
     
     this.apiService.post(url,data).then(data=>{
-      
       resolve(data);
     })
     .catch(error=>{

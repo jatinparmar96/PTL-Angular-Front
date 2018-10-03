@@ -44,12 +44,14 @@ export class CompanyInfoComponent implements OnInit {
       return;
     }
     this.fdService.toNext(data.value,current_step);
-    this.fdService.storeData('admin/company',data.value).then(data=>{
-        let l_data:any = data;
-        let token = l_data.token;
-        this.authService.updateToken(token);
-        this.router.navigateByUrl('setupCompany/OtherDetails/');
+    
+    this.router.navigateByUrl('setupCompany/OtherDetails/');
+    // this.fdService.storeData('admin/company',data.value).then(data=>{
+    //     let l_data:any = data;
+    //     let token = l_data.token;
+    //     this.authService.updateToken(token);
+    //     this.router.navigateByUrl('setupCompany/OtherDetails/');
      
-    });
+    // });
   }
 }
