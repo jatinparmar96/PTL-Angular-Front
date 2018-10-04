@@ -25,7 +25,6 @@ export class BranchMasterViewComponent implements OnInit {
       title: 'Branch Code',
       filter: false,
       },
-
     },
     attr: {
       class: "table table-responsive"
@@ -56,8 +55,12 @@ export class BranchMasterViewComponent implements OnInit {
         let l_data :any = data
         if(l_data.status)
         {
-          this.rows =(l_data.branches);                                         
+          console.log(l_data);
+          this.rows =(l_data.branches);    
+
         }
+      }).catch(error =>{
+        console.error(error);
       })
       
   }

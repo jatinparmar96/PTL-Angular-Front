@@ -28,7 +28,8 @@ export class CompanyInfoComponent implements OnInit {
             "company_name": [buffer[0],Validators.required],
             "company_display_name": [buffer[1],Validators.required],
             "company_fax_number":[buffer[2]],
-            "company_website":[buffer[3]]
+            "company_website":[buffer[3]],
+            "id":['new']
           });
    }
   ngOnInit() {

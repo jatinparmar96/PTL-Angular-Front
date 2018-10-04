@@ -50,15 +50,7 @@ export class ChartofaccountsComponent implements OnInit {
       "ca_pan":['Pan 123',Validators.required],
       "ca_gstn":['GSTIN123',Validators.required],
       "ca_tan":['TAN123',Validators.required],
-      "ca_commodity":['Comm123',Validators.required],
-      "ca_ecc_no":['ECC156',Validators.required],
-      "ca_rc_no":['RC124',Validators.required],
-      "ca_division":['Div001',Validators.required],
-      "ca_range":['cr_500',Validators.required],
-      "ca_commissionerate":['Comm12',Validators.required],
-      "ca_tin_no":['TIN123',Validators.required],
       "ca_date_opened":['06/06/1992',Validators.required],
-      "ca_cst_no":['CST123',Validators.required],
     })
   }
 

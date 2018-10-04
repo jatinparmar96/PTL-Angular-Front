@@ -29,7 +29,7 @@ export class CompanyOtherDetailsComponent implements OnInit {
     this.company_data = fb.group({
       "company_pan_number":[buffer[0],Validators.required],
       "company_tan_number":[buffer[1],Validators.required],
-      "company_gst_number":[buffer[2],Validators.required],
+      "branch_gst_number":[buffer[2],Validators.required],
       "company_ecc_number":[buffer[3],Validators.required],
       "company_division_code":[buffer[4],Validators.required],
       "company_cin_number":[buffer[5],Validators.required],

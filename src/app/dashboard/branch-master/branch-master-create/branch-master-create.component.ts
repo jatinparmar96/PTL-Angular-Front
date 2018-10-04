@@ -50,11 +50,10 @@ export class BranchMasterCreateComponent implements OnInit {
         let status:any = data
         if(status.status)
         {
-          alertFunctions.typeSuccess('Branch added Successfully');
+          alertFunctions.typeSuccess(status.message);
         }
         else{
           alertFunctions.typeError('Cannot add Branch');
-
         }
     }).catch(error=>{
       console.log(error)

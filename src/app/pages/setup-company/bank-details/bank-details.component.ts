@@ -33,7 +33,7 @@ export class BankDetailsComponent implements OnInit {
       "bank_branch":[buffer[3],Validators.required],
     });
    }
-
+   
   ngOnInit() {
   }
   
@@ -47,12 +47,14 @@ export class BankDetailsComponent implements OnInit {
     
     this.fdService.storeData('admin/company_wizard',output).then(data=>{
           let l_data:any = data;
+          console.log(data);
           if(l_data.status)
           {
             this.authService.updateToken(l_data.token);
             this.router.navigateByUrl('dashboard');
+            
           }
-          // this.router.navigateByUrl('dashboard');
+      
      }).catch(error =>{
        console.error(error)
      })
